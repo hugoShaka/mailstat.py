@@ -29,7 +29,11 @@ def scanmail(file):
         return 0
 
 def readconf(file):
-    repos=open(file,'r')
+    try:
+        repos=open(file,'r')
+    except IOError:
+        log.warning('Cannot read conf file')
+        return []
     toScan=[]
     for line in repos:
         toScan.append((line.split(',')[0],int(line.split(',')[1])))
