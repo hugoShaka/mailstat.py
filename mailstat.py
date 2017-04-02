@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import sys, os, re, csv
 import logging
 import optparse
@@ -20,7 +21,7 @@ def scanfolder(folder,score):
     return results
 
 def scanmail(file):
-    mail=open(file,'r')
+    mail=open(file,'r', encoding='utf-8', errors='ignore')
     match=re.search(r"X-Spam-Score: (?P<spamlevel>[0-9].[0-9]+)",mail.read())
     if match != None:
         return float(match.group('spamlevel'))
