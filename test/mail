@@ -1,0 +1,9 @@
+X-Virus-Scanned: Debian amavisd-new at vader.********.fr
+X-Spam-Flag: NO
+X-Spam-Score: 1.904
+X-Spam-Level: *
+X-Spam-Status: No, score=1.904 tagged_above=0 required=4 tests=[BAYES_50=0.8,
+    DKIM_SIGNED=0.1, DKIM_VALID=-0.1, HEADER_FROM_DIFFERENT_DOMAINS=0.001,
+    HTML_IMAGE_ONLY_32=0.001, HTML_MESSAGE=0.001,
+    HTML_MIME_NO_HTML_TAG=0.377, HTML_NONELEMENT_30_40=0.001,
+    MIME_HTML_ONLY=0.723] autolearn=disabled
